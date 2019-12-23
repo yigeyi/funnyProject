@@ -1,5 +1,5 @@
 const conf = {
-  port: 3000, //启动端口 
+  port: 3200, //启动端口 
   base_url: '',// 当前api服务器的域名
   mysql: { // mysql数据库信息
     host: 'localhost',
