@@ -6,8 +6,8 @@ const conf = {
     port: '3306',
     database: 'dev_db',
     user: 'root',
-    password: 'root',
-    charset: 'UTF8'
+    password: '',
+    charset: 'UTF8mb4'
   }
 }
 
