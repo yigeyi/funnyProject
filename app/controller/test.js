@@ -1,6 +1,7 @@
 const models = require('../../models')
 
 module.exports = {
+  //获取数据库数据
   async test(ctx){
     // console.log('res', ctx.input.name)
     let res = await models.test.findOne({
