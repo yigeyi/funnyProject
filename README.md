@@ -1,1 +1,2 @@
-###Koa2 + mysql 便捷开发框架
+###Koa2 + mysql 开发模板
+npm i

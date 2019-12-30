@@ -5,6 +5,11 @@ const config = require('./config')
 const router = require('./app/router')
 
 /**
+ * 处理跨域，这个必须在router之前使用，否则不生效
+ */
+const cors = require('@koa/cors');
+app.use(cors());
+/**
  * 报文中间件
  */
 const bodyBody = require('koa-body')
@@ -24,6 +29,7 @@ app.use(
     }
   })
 )
+
 
 /**
  * 自定义中间件
