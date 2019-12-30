@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const path = require('path')
 const fs = require('fs')
-const conf_mysql = require('../config').mysql
+const conf_mysql = require('../../config').mysql
 const Op = Sequelize.Op;
 // const operatorsAliases = {
 //   $eq: Op.eq,

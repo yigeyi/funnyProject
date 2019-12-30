@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		nick_name: {
 			type: DataTypes.INTEGER(11),
-			allowNull: true
+			allowNull: false
 		},
 	}, {
 		tableName: 'test',
