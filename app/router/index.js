@@ -5,9 +5,9 @@ let app = require('./v1.js')
 router.use('/api/app', app.routes(), app.allowedMethods())
 
 // vue history 设置
-router.get('*', async(ctx, next)=>{
-  return await ctx.render('index', {})
-})
+// router.get('*', async(ctx, next)=>{
+  // return await ctx.render('index', {})
+// })
 
 //返回注册路由
 module.exports = router
