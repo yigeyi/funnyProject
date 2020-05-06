@@ -34,11 +34,11 @@
 
 1. 2019-12-30 [Koa2 & mySQL & PM2 搭建后端服务](https://juejin.im/post/5e05c1d3f265da33a159e054)
 
-#### 
+
 
 ### 和我交流讨论
 
 #### 我的微信
 
-<img src="https://osyi-1253683809.cos.ap-guangzhou.myqcloud.com/sns/wechat/wechat-qrcode.jpg" alt="一个奕" title=" 一个奕" style="zoom:33%;" />
+<img src="https://osyi-1253683809.cos.ap-guangzhou.myqcloud.com/sns/wechat/wechat-qrcode.jpg" alt="一个奕" title=" 一个奕" style="width: 300px; box-shadow: 0 0 40px rgba(0,0,0,0.2);border-radius: 8px;margin-top: 10px;" />
 
