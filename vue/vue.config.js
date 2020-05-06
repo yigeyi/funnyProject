@@ -17,7 +17,7 @@ module.exports = {
     config
       .entry('home.vue')
       .add('babel-polyfill')
-      .end()
+      .end() 
 
     config.resolve.alias
     //   .set("@", resolve("src"))
