@@ -1,5 +1,5 @@
 const path = require("path")
-//const resolve = dir => path.join(__dirname, dir)
+const resolve = dir => path.join(__dirname, dir)
 //const env = process.env.NODE_ENV
 const assetsDir = ''
 const productionSourceMap = false
@@ -27,7 +27,7 @@ module.exports = {
     //.set("@views", resolve("src/views"))
     //.set("@config", resolve("src/config"))
     //.set("@utils", resolve("src/utils/"))
-    //.set("@http", resolve("src/http"))
+    .set("@http", resolve("src/http"))
     //.set("@api", resolve("src/http/api"))
     //.set("@mixin", resolve("src/mixin"))
     //.set("@components", resolve("src/components"))
@@ -58,9 +58,9 @@ module.exports = {
   devServer: {
     port: 8091,
     proxy: {
-      '/gameapi': {
+      '/api': {
         //target: 'http://csair-social-media.test',
-        target: 'http://t.jd618.jeeuu.com',
+        target: 'http://localhost:3200',
         changeOrigin: true
       }
     },
