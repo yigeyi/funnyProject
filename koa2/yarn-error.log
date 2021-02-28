@@ -1,0 +1,52 @@
+Arguments: 
+  D:\app\nodejs\node.exe C:\Users\yijun\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  D:\app\xshell\;D:\app\xftp\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\app\TortoiseGit\bin;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\app\nodejs\;D:\app\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\yijun\AppData\Local\Microsoft\WindowsApps;;D:\app\WebStorm 2019.1\bin;;D:\app\Microsoft VS Code\bin;C:\Users\yijun\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.18.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\yijun\AppData\Local\Yarn\Cache\v6\npm-yallist-2.1.2-1c11f9218f076089a47dd512f93c6699a6a81d52-integrity\node_modules\yallist\iterator.js' -> 'G:\code\myproject\github\funnyProject\koa2\node_modules\named-placeholders\node_modules\yallist\iterator.js'
+
+npm manifest: 
+  {
+    "name": "test_project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "pm2 start pm2.config.js --only dev",
+      "prod": "pm2 start pm2.config.js --only prod",
+      "test": "pm2 start pm2.config.js --only test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@koa/cors": "^2.2.3",
+      "joi": "^13.4.0",
+      "koa": "^2.11.0",
+      "koa-body": "^4.1.1",
+      "koa-cors": "0.0.16",
+      "koa-router": "^7.4.0",
+      "koa-xml-body": "^2.1.0",
+      "log4js": "^6.1.0",
+      "mysql": "^2.17.1",
+      "mysql2": "^2.0.2",
+      "sequelize": "^5.21.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

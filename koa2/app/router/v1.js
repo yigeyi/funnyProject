@@ -6,6 +6,7 @@ const router = require('koa-router')()
 const test = require('../controller/test')
 const test1 = require('../controller/test1') 
 const test2 = require('../controller/test2') 
+const upload = require('../controller/upload') 
 
 
 //接口映射
@@ -20,5 +21,8 @@ router.post('/test1',test1.getTest)
 
 //controller和service分离部分
 router.post('/test2',test2.getTest)
+
+//upload
+router.post('/upload',upload.upload )
 
 module.exports = router

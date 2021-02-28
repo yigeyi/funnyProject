@@ -9,4 +9,6 @@ let fetchPrefix = '/api/app'
  */
 export const test = () => fetcher(`${fetchPrefix}/test`, {}, 'post', true, true)
 
+export const upload = (data) => fetcher(`${fetchPrefix}/upload`, data, 'post', true, true)
+
 

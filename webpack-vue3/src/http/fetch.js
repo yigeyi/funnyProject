@@ -8,10 +8,17 @@ import axios from 'axios'
 const instance = axios.create({
   baseUrl: '',
   timeout: 10000,
-  withCredentials: false
+  withCredentials: false,
+  onUploadProgress: e=>{
+    console.log('上传进度', parseInt((e.loaded / e.total) * 100))
+  }
+  
 })
 
-export default async function (url, data = {}, method = "", notToken, notSign) {
+export default async function (url, data = {}, method = "", notToken, notSign, cb) {
+  console.log('aaa', arguments)
+  
+  instance[cb] = cb;
   const defaultMethod = {
     OPTIONS: "OPTIONS",
     GET: "GET",
@@ -56,7 +63,6 @@ export default async function (url, data = {}, method = "", notToken, notSign) {
   }else{
     requestObj.params = data
   }
-
   return instance.request(requestObj).then((respone) => {
     return respone.data
   })
