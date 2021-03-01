@@ -29,7 +29,11 @@ import {onMounted} from 'vue'
         let formData = new FormData();
         formData.append('files', file);
         formData.append('name', 124);
-
+        isMp4(file).then(e=>{
+          console.log(e)
+        });
+        // console.log('isMp4', isMp41)
+        return;
         upload(formData).then(e=>{
           console.log('2', e)
         })
@@ -39,9 +43,23 @@ import {onMounted} from 'vue'
         return new Promise(resolve =>{
           const reader = new FileReader();
           reader.onload = ()=>{
-            
-          }
+            const result = (reader.result)
+            .split("")
+            //转化成asc码
+            .map(v=>v.charCodeAt(0))
+            //转成16进制
+            .map(v=>v.toString(16))
+            //补齐
+            .map(v=> v.padStart(2, "0"))
+            .join("")
+            resolve(result);
+          };
+          reader.readAsBinaryString(blob);
         })
+      }
+      async function isMp4(file){
+        const ret = await blobToString(file.slice(0,4));
+        return ret === '00000018'
       }
       return {
         v: 12,
